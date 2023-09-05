@@ -1,0 +1,35 @@
+@mixin laptopS {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: 960px) {
+		@content;
+	}
+}
+
+@mixin tabletS {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin phoneS {
+	@media screen and (max-width: 375px) {
+		@content;
+	}
+}
+
+@mixin bitrixSize {
+	@media screen and (max-width: 530px) {
+		@content;
+	}
+}

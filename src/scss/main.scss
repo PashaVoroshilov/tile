@@ -1,0 +1,19 @@
+//layout
+@import "layout/_normalize";
+@import "layout/_fonts";
+@import "layout/_media";
+@import "layout/_mixins";
+@import "layout/_variables";
+@import "layout/_style";
+
+//templates
+@import "templates/_header";
+@import "templates/_footer";
+
+//sections
+@import "sections/_section-greet";
+@import "sections/_section-work";
+@import "sections/_section-steps";
+@import "sections/_section-reviews";
+@import "sections/_section-services";
+@import "templates/_404";

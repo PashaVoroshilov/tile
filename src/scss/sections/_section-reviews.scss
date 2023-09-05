@@ -1,0 +1,291 @@
+.reviews {
+  padding-top: 4rem;
+  margin-top: 12.1rem;
+
+  @include tablet {
+    margin-top: 8.1rem;
+  }
+
+  @include tabletS {
+    position: relative;
+    margin-top: 2.1rem;
+  }
+}
+
+.winter-bg .reviews {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -19.8rem;
+      right: 0;
+      height: 51.9rem;
+      width: 20.5rem;
+      background: url('../img/bg/body-background/winter/background-4.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.summer-bg .reviews {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -19.8rem;
+      right: 0;
+      height: 51.9rem;
+      width: 20.5rem;
+      background: url('../img/bg/body-background/summer/background-4.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.autumn-bg .reviews {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -19.8rem;
+      right: 0;
+      height: 51.9rem;
+      width: 20.5rem;
+      background: url('../img/bg/body-background/autumn/background-4.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.spring-bg .reviews {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -19.8rem;
+      right: 0;
+      height: 51.9rem;
+      width: 20.5rem;
+      background: url('../img/bg/body-background/spring/background-4.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.reviews__title {
+  margin-bottom: 6rem;
+
+  @include tablet {
+    margin-bottom: 6.2rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 2.9rem;
+  }
+}
+
+.reviews__list {
+  position: relative;
+
+  &.box-shadow {
+    padding-bottom: 12rem;
+  }
+
+  @include laptopS {
+
+    &.box-shadow {
+      padding-bottom: 9.8rem;
+    }
+  }
+  @include tablet {
+
+    &.box-shadow {
+      padding-bottom: 7.8rem;
+    }
+  }
+  @include phone {
+
+    &.box-shadow {
+      padding-bottom: 5.1rem;
+    }
+  }
+}
+
+.reviews__list .swiper {
+  border-radius: 2.4rem;
+}
+
+.reviews__list:not(.box-shadow) .swiper {
+  padding-bottom: 12rem;
+
+  @include laptopS {
+    padding-bottom: 9.8rem;
+  }
+  @include tablet {
+    padding-bottom: 7.8rem;
+  }
+  @include phone {
+    padding-bottom: 5.1rem;
+  }
+}
+
+.reviews__list.box-shadow .swiper {
+  box-shadow: 0px 4rem 12rem rgba(191, 150, 232, 0.1);
+}
+
+.reviews__list .swiper-wrapper {
+  align-items: initial;
+}
+
+.reviews__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 14rem 4rem 6rem;
+  background-color: #fff;
+  box-shadow: 0px 4rem 12rem rgba(191, 150, 232, 0.1);
+  border-radius: 2.4rem;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../img/content/quote.svg") center/contain no-repeat;
+  }
+
+  @include laptopS {
+    padding: 12rem 3rem 3rem;
+
+    &::before {
+      top: 5rem;
+    }
+  }
+
+  @include tablet {
+    padding: 11.8rem 2.8rem 3rem;
+  }
+
+  @include tabletS {
+    padding: 10rem 2.5rem 4rem;
+
+    &::before {
+      top: 4rem;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.reviews__text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 4rem;
+
+  @include laptopS {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-left: 0.2rem;
+    margin-bottom: 2.8rem;
+  }
+
+  @include tablet {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: 2.7rem;
+  }
+
+  @include tabletS {
+    padding: 0;
+  }
+}
+
+.reviews__about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 7.4rem;
+  padding-left: 9.9rem;
+  margin-top: auto;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    background: #F4F7FF url("../img/content/review-logo.svg") center/contain no-repeat;
+  }
+
+  @include laptopS {
+    min-height: 6rem;
+    padding-left: 8.2rem;
+
+    &::before {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  @include tablet {
+    min-height: 6.4rem;
+    padding-left: 8.4rem;
+
+    &::before {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+  }
+}
+
+.reviews__name {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: $violet;
+  margin-bottom: 1.2rem;
+
+  @include tablet {
+    font-size: 1.6rem;
+  }
+}
+
+.reviews__social.social {
+  justify-content: flex-start;
+  margin: 0 -0.6rem;
+}
+
+.reviews__social.social .social__link {
+  margin: 0 0.6rem;
+
+  @include tabletS {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+.reviews__actions {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    bottom: 0;
+  }
+}
+
+.reviews__pagination {
+  margin: 0 1.5rem;
+
+  @include tablet {
+    margin: 0 0.4rem;
+  }
+}

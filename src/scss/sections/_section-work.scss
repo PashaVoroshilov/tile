@@ -1,0 +1,194 @@
+.work {
+  padding-top: 4rem;
+  margin-top: 10rem;
+
+  @include laptopS {
+    margin-top: 8rem;
+  }
+
+  @include tablet {
+    margin-top: 7.1rem;
+  }
+
+  @include tabletS {
+    position: relative;
+    min-height: initial;
+    margin-top: 4rem;
+  }
+}
+
+.winter-bg .work {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2.4rem;
+      right: 0;
+      height: 27.4rem;
+      width: 12.7rem;
+      background: url('../img/bg/body-background/winter/background-1.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.summer-bg .work {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2.4rem;
+      right: 0;
+      height: 27.4rem;
+      width: 12.7rem;
+      background: url('../img/bg/body-background/summer/background-1.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.autumn-bg .work {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2.4rem;
+      right: 0;
+      height: 27.4rem;
+      width: 12.7rem;
+      background: url('../img/bg/body-background/autumn/background-1.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.spring-bg .work {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2.4rem;
+      right: 0;
+      height: 27.4rem;
+      width: 12.7rem;
+      background: url('../img/bg/body-background/spring/background-1.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.work__container {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.work__content {
+  flex-shrink: 0;
+  width: 34.1rem;
+  margin-right: 9.9rem;
+
+  @include laptopS {
+    width: 25.6rem;
+    margin-right: 7.4rem;
+  }
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 3rem;
+  }
+}
+
+.work__title {
+  margin-bottom: 3.1rem;
+
+  @include tablet {
+    max-width: 22.2rem;
+    margin-bottom: 2rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.work__subtitle {
+  @include tablet {
+    max-width: 35rem;
+    letter-spacing: -0.02rem;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include tabletS {
+    max-width: 21.4rem;
+  }
+}
+
+.work__item {
+  position: relative;
+  padding: 1.9rem 3rem 1.9rem 6.2rem;
+  background-color: #fff;
+  box-shadow: 0px 20px 30px rgba(191, 150, 232, 0.06);
+  border-radius: 1.2rem;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 3.8rem;
+    height: 7.7rem;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: url("../img/content/mark-list.svg") center/contain no-repeat;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &.one--line * {
+    display: inline;
+  }
+
+  @include laptopS {
+    padding: 2rem 3rem 2rem 5.8rem;
+  }
+
+  @include tabletS {
+    padding: 1.8rem 1.5rem 1.8rem 3.4rem;
+
+    &::before {
+      width: 2.4rem;
+      height: 6rem;
+      top: 1.8rem;
+      transform: translateY(0);
+    }
+  }
+}
+
+.work__item-title, .work__item-text {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.02rem;
+
+  @include laptopS {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+
+  @include tabletS {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+}
+
+.work__item-title {
+  font-weight: 700;
+}

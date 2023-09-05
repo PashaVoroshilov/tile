@@ -1,0 +1,406 @@
+.steps {
+  padding-top: 4rem;
+  margin-top: 12rem;
+
+  @include tablet {
+    margin-top: 8.3rem;
+  }
+
+  @include tabletS {
+    position: relative;
+    margin-top: 4rem;
+  }
+}
+
+.winter-bg .steps {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -13rem;
+      right: 0;
+      height: 31rem;
+      width: 13.8rem;
+      background: url('../img/bg/body-background/winter/background-2.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.summer-bg .steps {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -13rem;
+      right: 0;
+      height: 31rem;
+      width: 13.8rem;
+      background: url('../img/bg/body-background/summer/background-2.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.autumn-bg .steps {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -13rem;
+      right: 0;
+      height: 31rem;
+      width: 13.8rem;
+      background: url('../img/bg/body-background/autumn/background-2.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+.spring-bg .steps {
+  @include tabletS { 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -13rem;
+      right: 0;
+      height: 31rem;
+      width: 13.8rem;
+      background: url('../img/bg/body-background/spring/background-2.png') center/contain no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.steps__container.container {
+  @include tablet {
+    max-width: 76.5rem;
+  }
+}
+
+.steps__title {
+  margin-bottom: 6rem;
+
+  @include tablet {
+    margin-bottom: 9rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 2.3rem;
+  }
+
+  @include phone {
+    margin-bottom: 3.3rem;
+  }
+}
+
+.steps__list {
+  margin-bottom: 7.7rem;
+
+  @include laptopS {
+    margin-bottom: 8rem;
+  }
+
+  @include tablet {
+    margin-bottom: 6rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 4rem;
+  }
+}
+
+.steps__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 16rem;
+  }
+
+  @include laptopS {
+
+    &.steps__item-first {
+      margin-bottom: 18rem;
+    }
+
+    &.steps__item-second {
+      margin-bottom: 6.5rem;
+    }
+
+    &.steps__item-third {
+      margin-bottom: 6.5rem;
+    }
+  }
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  @include tabletS {
+
+    &:not(:last-child) {
+      margin-bottom: 4.3rem;
+    }
+  }
+}
+
+.steps__wrapper {
+  flex: 1;
+  max-width: 70rem;
+}
+
+.steps__wrapper-another {
+  flex-shrink: 0;
+  width: 57.5rem;
+  margin-left: 5rem;
+
+  @include laptopS {
+    width: 46.5rem;
+    margin-left: 3rem;
+  }
+
+  @include tablet {
+    width: 35rem;
+    margin-left: 2.5rem;
+  }
+}
+
+.steps__top {
+  display: flex;
+  margin-bottom: 6rem;
+
+  @include laptopS {
+    margin-bottom: 3.1rem;
+  }
+
+  @include tablet {
+    margin-bottom: 3rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 2.1rem;
+  }
+}
+
+.steps__item-first .steps__top {
+  @include tablet {
+    margin-bottom: 2.1rem;
+  }
+}
+
+.steps__top-number {
+  position: relative;
+  margin: 0.8rem 3rem 0 0;
+
+  @include tablet {
+    margin: 1.5rem 2rem 0 0;
+  }
+
+  @include tabletS {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+.steps__top-number-wrapper {
+  position: relative;
+  width: 10.4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: $violet-light;
+  text-align: center;
+  padding: 1.6rem 0 1.7rem;
+  background: url("../img/content/number-step.svg") center/contain no-repeat;
+  z-index: 10;
+
+  @include tablet {
+    width: 9.9rem;
+    padding: 1.69rem 0 1.4rem;
+  }
+
+  @include tabletS {
+    width: 6.6rem;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+}
+
+.steps__top-title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding-top: 0.2rem;
+
+  @include tablet {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-top: 1.6rem;
+  }
+
+  @include tabletS {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-top: 0;
+  }
+}
+
+.steps__tabs {
+  display: none;
+
+  @include tabletS {
+    display: flex;
+  }
+}
+
+.steps__tabs-btn.tabs-nav__btn {
+  @include tablet {
+    font-weight: 500;
+    height: 4.4rem;
+    width: 50%;
+
+    &.active {
+      background: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+.steps__content {
+  background-color: #fff;
+  padding: 4.1rem 4rem 4rem;
+  border-radius: 1.6rem;
+  box-shadow: 0px 20px 60px rgba(191, 150, 232, 0.08);
+
+  @include laptopS {
+    padding: 3.1rem 2.8rem 3rem 3rem;
+  }
+
+  @include tablet {
+    position: relative;
+    padding: 2.6rem 2.5rem 2.5rem;
+    z-index: 10;
+  }
+
+  @include tabletS {
+    border-radius: 0;
+    padding: 3rem 2.5rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+    box-shadow: 0px 2rem 6rem rgba(191, 150, 232, 0.08);
+  }
+}
+
+.steps__wrapper .steps__content,
+.steps__wrapper-another .steps__content {
+  display: block;
+}
+
+.steps__wrapper .steps__content.another-steps-content {
+  display: none;
+}
+
+.steps__content-title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+  color: $violet;
+  margin-bottom: 1.5rem;
+
+  @include tablet {
+    margin-bottom: 1rem;
+  }
+
+  @include tabletS {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.steps__item-first .steps__content-title {
+  @include tablet {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  @include tabletS {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+}
+
+.steps__content-text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.015rem;
+  margin-bottom: 3rem;
+
+  @include laptopS {
+    margin-bottom: 2.9rem;
+  }
+
+  @include tablet {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  @include tabletS {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.another-steps-content {
+  @include tablet {
+    display: none;
+  }
+}
+
+.steps__button[data-step=step-attorneyRegistration] {
+  .default-block {
+    display: inline;
+  }
+  .mobile-block {
+    display: none;
+  }
+
+  @include phone {
+    .default-block {
+      display: none;
+    }
+    .mobile-block {
+      display: inline;
+    }
+  }
+}
+
+.steps__payment-btn {
+  text-align: center;
+
+  .button {
+    letter-spacing: -0.025rem;
+  }
+
+  .button.hidden {
+    display: none;
+  }
+
+  @include tabletS {
+    .button {
+      width: 100%;
+      display: none;
+    }
+
+    .button.hidden {
+      display: inline-block;
+    }
+  }
+
+  @include tablet {
+    .button {
+      height: 6.8rem;
+    }
+  }
+
+  @include tabletS {
+    .button {
+      height: 6rem;
+    }
+  }
+}

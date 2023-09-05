@@ -1,0 +1,216 @@
+.greet {
+  padding: 11rem 0 9.3rem;
+
+  @include laptopS {
+    padding: 9.6rem 0 4.1rem;
+  }
+
+  @include tablet {
+    padding: 8.5rem 0 1rem;
+  }
+
+  @include tabletS {
+    text-align: center;
+    padding-top: 4.1rem;
+    padding: 4.1rem 0 0;
+  }
+}
+
+.greet__container.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: initial;
+  padding: 0 26rem 0 36rem;
+
+  @include laptopS {
+    padding: 0 13.3rem 0 12rem;
+  }
+
+  @include tablet {
+    padding: 0 12.8rem 0 12rem;
+  }
+
+  @include tabletS {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 .5rem;
+  }
+}
+
+.greet__content {
+  width: 54.6rem;
+  padding: 5rem 2rem 0 0;
+
+  @include laptopS {
+    width: 36.8rem;
+    padding: 5rem 0 0 0;
+  }
+
+  @include tablet {
+    width: 30.7rem;
+    padding: 0;
+  }
+
+  @include tabletS {
+   margin: 0 auto;
+  }
+}
+
+.greet__title {
+  font-size: 4.8rem;
+  line-height: 6.2rem;
+  letter-spacing: -0.03rem;
+  margin-bottom: 3rem;
+
+  @include laptopS {
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    margin-bottom: 2.2rem;
+  }
+
+  @include tablet {
+    font-size: 3rem;
+    line-height: 3.9rem;
+  }
+
+  @include tabletS {
+    font-size: 2.8rem;
+    line-height: 3.7rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.greet__subtitle {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.02rem;
+  margin-bottom: 6rem;
+
+  @include laptopS {
+    font-size: 1.8rem;
+    margin-bottom: 5.2rem;
+  }
+
+  @include tablet {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+
+  @include tabletS {
+    max-width: 21.5rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin: 0 auto 4rem;
+  }
+}
+
+.greet__btn {
+  min-width: 18rem;
+
+  &.greet__btn-tablet {
+    display: none;
+  }
+
+  @include tabletS {
+    display: none;
+
+    &.greet__btn-tablet {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.greet__notebook {
+  position: relative;
+  width: 65.2rem;
+  height: 43.5rem;
+  padding-top: 2rem;
+
+  iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85.8rem;
+    height: 52.8rem;
+    background: url('../img/content/notebook2.png') center/contain no-repeat;
+  }
+
+  @include laptopS {
+    position: relative;
+    top: .4rem;
+    width: 50.3rem;
+    height: 33.6rem;
+    padding-top: 1.6rem;
+    pointer-events: none;
+
+    iframe {
+      pointer-events: all;
+    }
+
+    &::before { 
+      width: 66.3rem;
+      height: 40.8rem;
+    }
+  }
+
+  @include tablet {
+    width: 34.9rem;
+    height: 23.2rem;
+    padding-top: 1rem;
+    top: -.4rem;
+
+    &::before { 
+      width: 46rem;
+      height: 28.3rem;
+    }
+  }
+
+  @include tabletS {
+    width: 33rem;
+    height: 22.7rem;
+    top: 0;
+    padding-top: 1rem;
+    margin-bottom: 6.3rem;
+
+    &::before {
+      width: 46rem;
+      height: 27.3rem;
+    }
+  }
+
+  @include phone {
+    width: 23.6rem;
+    height: 16rem;
+    
+    &::before {
+      width: 31rem;
+      height: 19.1rem;
+    }
+  }
+}
+
+// .greet__notebook-video {
+//   position: absolute;
+//   top: 2.1rem;
+//   left: 10.1rem;
+//   right: 10.6rem;
+
+
+//   iframe {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
